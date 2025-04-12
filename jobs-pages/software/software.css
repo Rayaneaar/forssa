@@ -1,0 +1,50 @@
+.hero {
+    background-image: url('');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+*{
+    color: white;
+}
+
+.hero {
+    background-image: url('Home.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #0f1115;
+    margin: 0;
+}
+
+.software-title {
+    padding-top: 250px;
+    padding-left: 70px;
+}
+
+h1, h2, h3 {
+    color: #ffffff;
+}
+
+ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.btn-outline-light {
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-outline-light:hover {
+    background-color: #ffffff;
+    color: #000;
+}

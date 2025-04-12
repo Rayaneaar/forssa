@@ -1,0 +1,76 @@
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    background-image: url('../pictures/herddo-section-background.png');
+    height: 100vh;
+    background-size: cover; 
+    background-position: center;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+}
+.login-menu{
+    background-color: #3a0e38;
+    color: white;
+    width: 500px;
+    height: 700px;
+    
+}
+.login-menu h2{
+    font-size: 50px;
+    font-weight: 450;
+    text-align: center;
+}
+.login-menu h2 span{
+    font-size: 15px;
+    font-weight: 450; 
+    line-height: 0.5;
+}
+.login-menu h2 span a{
+    color: white;
+}
+.data{
+    margin-top: 100px;
+}
+.data input{
+    height: 35px;
+    width: 300px;
+    border-radius: 5px;
+    border: 0px solid;
+    margin-left: 80px;
+}
+.data label{
+    text-align: left;
+    margin-left: 80px;
+
+}
+.passwordforget{
+    margin-left: 80px;
+}
+.passwordforget label{
+    margin-right: 19px;
+}
+.passwordforget a{
+    color: white;
+}
+.login-background{
+    margin-top: 50px;
+}
+.passwordforget button{
+    height: 44px;
+    width: 320px;
+    margin-top: 60px;
+    border-radius: 5px;
+    border: 0px solid ;
+    color: white;
+    background-color: #ff66c4;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-size: 15px;
+}
+.passwordforget button:hover{
+    background-color: #d30f88;
+}   
