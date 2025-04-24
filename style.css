@@ -91,30 +91,170 @@
   .image-container img.active {
     opacity: 1;
   }
-  .jobs-offers{
-    background: linear-gradient(315deg, #e34fd2 0%, #160b10 100%);
-    height: 200vh;  
-  }
-  .it-jobs {
-    padding-top: 120px;
+/* Enhanced Job Offers Styling */
 
-  }
-  .check-offer{
-    height: 44px;
-    width: 250px;
-    margin: 10px 10px;
-    border: 2px solid #ff66c4;
-    background-color: transparent;
-    color: #ff93d4;
-    transition: 0.7s ease;
-    cursor: pointer;
-  }
-  .check-offer:hover{
-    background-color: #50204d;
-    color: white;
-    border: 2px solid white;
-  }
-  .design-offers {
-    padding-top: 120px;
+/* Common styling for all job sections */
+.jobs-offers {
+  background: linear-gradient(315deg, #e34fd2 0%, #160b10 100%);
+  padding-bottom: 50px;
+  min-height: 100vh;
+}
 
+/* Section title styling */
+.jobs-offers .display-1 {
+  color: white;
+  font-family: "Alata", serif;
+  letter-spacing: 6px;
+  padding-top: 80px;
+  margin-bottom: 60px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.jobs-offers .display-1::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background-color: #ff66c4;
+  border-radius: 2px;
+}
+
+/* Cards container */
+.offers-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 0 20px;
+}
+
+/* Job Card Styling */
+.job-card {
+  width: 320px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.job-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 102, 196, 0.5);
+}
+
+.job-card img {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+
+.job-card:hover img {
+  transform: scale(1.05);
+}
+
+.job-card-body {
+  padding: 25px 20px;
+}
+
+.job-card-title {
+  font-family: "Alata", serif;
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 15px;
+  position: relative;
+  display: inline-block;
+}
+
+.job-card-title::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 40%;
+  height: 3px;
+  background-color: #ff66c4;
+  transition: width 0.3s ease;
+}
+
+.job-card:hover .job-card-title::after {
+  width: 100%;
+}
+
+.job-card-text {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+.check-offer {
+  width: 100%;
+  padding: 12px 0;
+  background: linear-gradient(90deg, #ff66c4, #e34fd2);
+  border: none;
+  border-radius: 30px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: white;
+  letter-spacing: 1px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 102, 196, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.check-offer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.7s ease;
+}
+
+.check-offer:hover::before {
+  left: 100%;
+}
+
+.check-offer:hover {
+  background: linear-gradient(90deg, #e34fd2, #ff66c4);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(255, 102, 196, 0.4);
+}
+
+/* Media query for responsiveness */
+@media (max-width: 991px) {
+  .offers-container {
+      flex-direction: column;
+      align-items: center;
   }
+  
+  .job-card {
+      width: 90%;
+      max-width: 350px;
+  }
+  
+  .jobs-offers .display-1 {
+      font-size: 2.5rem;
+  }
+}
+
+/* Spacing between sections */
+.design-offers {
+  margin-top: 50px;
+}

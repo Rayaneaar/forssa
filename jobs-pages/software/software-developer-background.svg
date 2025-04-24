@@ -1,0 +1,59 @@
+<svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a2d2d" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#64ffce" stop-opacity="0.2" />
+    </linearGradient>
+    <filter id="noise" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.005" numOctaves="2" seed="0" />
+      <feDisplacementMap in="SourceGraphic" scale="30" />
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#0a2d2d" />
+  
+  <!-- Code pattern elements -->
+  <g opacity="0.15">
+    <!-- Code brackets and symbols -->
+    <text x="100" y="120" font-family="monospace" font-size="24" fill="#64ffce">function developer() {</text>
+    <text x="120" y="160" font-family="monospace" font-size="22" fill="#64ffce">return {</text>
+    <text x="140" y="200" font-family="monospace" font-size="20" fill="#64ffce">skills: ['JavaScript', 'React', 'Node'],</text>
+    <text x="140" y="240" font-family="monospace" font-size="20" fill="#64ffce">experience: '5+ years',</text>
+    <text x="140" y="280" font-family="monospace" font-size="20" fill="#64ffce">remote: true</text>
+    <text x="120" y="320" font-family="monospace" font-size="22" fill="#64ffce">};</text>
+    <text x="100" y="360" font-family="monospace" font-size="24" fill="#64ffce">}</text>
+    
+    <text x="700" y="400" font-family="monospace" font-size="22" fill="#92d8c2">const technologies = [</text>
+    <text x="720" y="440" font-family="monospace" font-size="20" fill="#92d8c2">'React', 'Vue', 'Angular',</text>
+    <text x="720" y="480" font-family="monospace" font-size="20" fill="#92d8c2">'Python', 'Java', 'Go',</text>
+    <text x="720" y="520" font-family="monospace" font-size="20" fill="#92d8c2">'AWS', 'Docker', 'Kubernetes'</text>
+    <text x="700" y="560" font-family="monospace" font-size="22" fill="#92d8c2">];</text>
+    
+    <text x="100" y="620" font-family="monospace" font-size="22" fill="#64ffce">if (candidate.skills.match(requirements)) {</text>
+    <text x="120" y="660" font-family="monospace" font-size="20" fill="#64ffce">hiring = true;</text>
+    <text x="100" y="700" font-family="monospace" font-size="22" fill="#64ffce">}</text>
+  </g>
+  
+  <!-- Abstract decoration elements -->
+  <g filter="url(#noise)">
+    <circle cx="200" cy="200" r="100" fill="none" stroke="#64ffce" stroke-width="2" opacity="0.1" />
+    <circle cx="700" cy="300" r="150" fill="none" stroke="#92d8c2" stroke-width="2" opacity="0.1" />
+    <circle cx="400" cy="600" r="120" fill="none" stroke="#64ffce" stroke-width="2" opacity="0.1" />
+  </g>
+  
+  <!-- Grid lines -->
+  <g stroke="#64ffce" stroke-width="0.5" opacity="0.05">
+    <line x1="0" y1="0" x2="1200" y2="800" />
+    <line x1="1200" y1="0" x2="0" y2="800" />
+    <line x1="600" y1="0" x2="600" y2="800" />
+    <line x1="0" y1="400" x2="1200" y2="400" />
+  </g>
+  
+  <!-- Decorative abstract shapes -->
+  <path d="M0,100 Q300,300 600,50 T1200,100" stroke="#64ffce" stroke-width="2" fill="none" opacity="0.1" />
+  <path d="M0,700 Q300,500 600,750 T1200,700" stroke="#92d8c2" stroke-width="2" fill="none" opacity="0.1" />
+  
+  <!-- Overlay gradient -->
+  <rect width="100%" height="100%" fill="url(#gradient1)" opacity="0.3" />
+</svg>

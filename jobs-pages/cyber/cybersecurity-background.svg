@@ -1,0 +1,92 @@
+<svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a2d" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#6495ff" stop-opacity="0.2" />
+    </linearGradient>
+    <filter id="noise" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.01" numOctaves="3" seed="5" />
+      <feDisplacementMap in="SourceGraphic" scale="20" />
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#0a0a2d" />
+  
+  <!-- Binary pattern -->
+  <g opacity="0.15">
+    <text x="50" y="50" font-family="monospace" font-size="12" fill="#6495ff">01001000 01100001 01100011 01101011</text>
+    <text x="50" y="75" font-family="monospace" font-size="12" fill="#6495ff">01010011 01100101 01100011 01110101</text>
+    <text x="50" y="100" font-family="monospace" font-size="12" fill="#6495ff">01000100 01100101 01100110 01100101</text>
+    <text x="50" y="125" font-family="monospace" font-size="12" fill="#6495ff">01001110 01100101 01110100 01110111</text>
+    
+    <text x="350" y="150" font-family="monospace" font-size="12" fill="#92a8d8">01000110 01101001 01110010 01100101</text>
+    <text x="350" y="175" font-family="monospace" font-size="12" fill="#92a8d8">01010111 01100001 01101100 01101100</text>
+    <text x="350" y="200" font-family="monospace" font-size="12" fill="#92a8d8">01000101 01101110 01100011 01110010</text>
+    <text x="350" y="225" font-family="monospace" font-size="12" fill="#92a8d8">01010000 01110010 01101111 01110100</text>
+    
+    <text x="650" y="300" font-family="monospace" font-size="12" fill="#6495ff">01010011 01100101 01100011 01110101</text>
+    <text x="650" y="325" font-family="monospace" font-size="12" fill="#6495ff">01000011 01111001 01100010 01100101</text>
+    <text x="650" y="350" font-family="monospace" font-size="12" fill="#6495ff">01010000 01100101 01101110 01110100</text>
+    <text x="650" y="375" font-family="monospace" font-size="12" fill="#6495ff">01000101 01110100 01101000 01101001</text>
+    
+    <text x="100" y="450" font-family="monospace" font-size="12" fill="#92a8d8">01010011 01100101 01100011 01110101</text>
+    <text x="100" y="475" font-family="monospace" font-size="12" fill="#92a8d8">01010111 01100001 01101100 01101100</text>
+    <text x="100" y="500" font-family="monospace" font-size="12" fill="#92a8d8">01000101 01101110 01100011 01110010</text>
+    <text x="100" y="525" font-family="monospace" font-size="12" fill="#92a8d8">01010000 01110010 01101111 01110100</text>
+    
+    <text x="400" y="600" font-family="monospace" font-size="12" fill="#6495ff">01010011 01100101 01100011 01110101</text>
+    <text x="400" y="625" font-family="monospace" font-size="12" fill="#6495ff">01000011 01111001 01100010 01100101</text>
+    <text x="400" y="650" font-family="monospace" font-size="12" fill="#6495ff">01010000 01100101 01101110 01110100</text>
+    <text x="400" y="675" font-family="monospace" font-size="12" fill="#6495ff">01000101 01110100 01101000 01101001</text>
+    
+    <text x="700" y="700" font-family="monospace" font-size="12" fill="#92a8d8">01001000 01100001 01100011 01101011</text>
+    <text x="700" y="725" font-family="monospace" font-size="12" fill="#92a8d8">01010011 01100101 01100011 01110101</text>
+    <text x="700" y="750" font-family="monospace" font-size="12" fill="#92a8d8">01000100 01100101 01100110 01100101</text>
+    <text x="700" y="775" font-family="monospace" font-size="12" fill="#92a8d8">01001110 01100101 01110100 01110111</text>
+  </g>
+  
+  <!-- Network nodes and connections -->
+  <g filter="url(#noise)">
+    <!-- Nodes -->
+    <circle cx="200" cy="200" r="20" fill="#6495ff" opacity="0.2" />
+    <circle cx="500" cy="250" r="15" fill="#6495ff" opacity="0.2" />
+    <circle cx="750" cy="150" r="25" fill="#6495ff" opacity="0.2" />
+    <circle cx="900" cy="350" r="20" fill="#6495ff" opacity="0.2" />
+    <circle cx="300" cy="400" r="20" fill="#6495ff" opacity="0.2" />
+    <circle cx="600" cy="500" r="15" fill="#6495ff" opacity="0.2" />
+    <circle cx="800" cy="600" r="25" fill="#6495ff" opacity="0.2" />
+    <circle cx="250" cy="650" r="15" fill="#6495ff" opacity="0.2" />
+    
+    <!-- Connections -->
+    <line x1="200" y1="200" x2="500" y2="250" stroke="#92a8d8" stroke-width="1" opacity="0.2" />
+    <line x1="500" y1="250" x2="750" y2="150" stroke="#92a8d8" stroke-width="1" opacity="0.2" />
+    <line x1="750" y1="150" x2="900" y2="350" stroke="#92a8d8" stroke-width="1" opacity="0.2" />
+    <line x1="900" y1="350" x2="300" y2="400" stroke="#92a8d8" stroke-width="1" opacity="0.2" />
+    <line x1="300" y1="400" x2="600" y2="500" stroke="#92a8d8" stroke-width="1" opacity="0.2" />
+    <line x1="600" y1="500" x2="800" y2="600" stroke="#92a8d8" stroke-width="1" opacity="0.2" />
+    <line x1="800" y1="600" x2="250" y2="650" stroke="#92a8d8" stroke-width="1" opacity="0.2" />
+    <line x1="250" y1="650" x2="200" y2="200" stroke="#92a8d8" stroke-width="1" opacity="0.2" />
+    <line x1="500" y1="250" x2="300" y2="400" stroke="#92a8d8" stroke-width="1" opacity="0.2" />
+    <line x1="750" y1="150" x2="600" y2="500" stroke="#92a8d8" stroke-width="1" opacity="0.2" />
+    <line x1="900" y1="350" x2="800" y2="600" stroke="#92a8d8" stroke-width="1" opacity="0.2" />
+  </g>
+  
+  <!-- Shield icon -->
+  <g opacity="0.15" transform="translate(600, 400) scale(0.8)">
+    <path d="M 0,-150 L 120,-50 L 120,100 L 0,150 L -120,100 L -120,-50 Z" fill="none" stroke="#6495ff" stroke-width="8" />
+    <path d="M 0,-100 L 0,100" stroke="#6495ff" stroke-width="8" />
+    <path d="M -60,0 L 60,0" stroke="#6495ff" stroke-width="8" />
+  </g>
+  
+  <!-- Circuit board traces -->
+  <g stroke="#92a8d8" stroke-width="2" fill="none" opacity="0.1">
+    <path d="M 0,300 H 200 V 150 H 400 V 50 H 600 V 200 H 800 V 100 H 1000 V 300 H 1200" />
+    <path d="M 0,500 H 150 V 650 H 350 V 550 H 550 V 700 H 750 V 600 H 950 V 500 H 1200" />
+    <path d="M 300,0 V 200 H 450 V 400 H 600 V 600 H 750 V 800" />
+    <path d="M 900,0 V 300 H 750 V 500 H 600 V 700 H 450 V 800" />
+  </g>
+  
+  <!-- Overlay gradient -->
+  <rect width="100%" height="100%" fill="url(#gradient1)" opacity="0.3" />
+</svg>

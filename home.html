@@ -1,151 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-   <link rel="stylesheet" href="style.css">
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alata&family=Alatsi&family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Alex+Brush&family=Allerta&family=Arya:wght@400;700&family=Basic&family=Baskervville:ital@0;1&family=Bayon&family=Days+One&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Julius+Sans+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Alatsi&family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Alex+Brush&family=Allerta&family=Arya:wght@400;700&family=Basic&family=Baskervville:ital@0;1&family=Bayon&family=Days+One&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Julius+Sans+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="hero">
-            <header>
-        <nav class="navbar bg-transparent  navbar-expand-lg navbar-dark" >
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">F o r s s a</a>
-              <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="offcanvas offcanvas-start sidebar" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header text-white border-bottom">
-                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-                  <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item mx-4">
-                      <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item mx-4">
-                      <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item mx-4">
-                        <a class="nav-link" href="#">login</a>
-                      </li>
-                      <li class="nav-item mx-4">
-                        <a class="nav-link" href="#">sign up    </a>
-                      </li>
-                  </ul>
-                </div>
+      <header>
+        <nav class="navbar bg-transparent navbar-expand-lg navbar-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"
+              >F o r s s a <span class="ms-2">T e c h</span>
+            </a>
+            <button
+              class="navbar-toggler shadow-none border-0"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="offcanvas offcanvas-start sidebar"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div class="offcanvas-header text-white border-bottom">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                  Offcanvas
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close btn-close-white shadow-none"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item mx-4">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item mx-4">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item mx-4">
+                    <a class="nav-link" href="#">login</a>
+                  </li>
+                  <li class="nav-item mx-4">
+                    <a class="nav-link" href="#">sign up </a>
+                  </li>
+                </ul>
               </div>
             </div>
-          </nav>
-    </header>
-    <main class="hero-section">
+          </div>
+        </nav>
+      </header>
+      <main class="hero-section">
         <div class="hero-title">
-            <h2 class="display-1">Forssa</h2>
-            <h4 class="fs-5">YOUR GATEWAY TO OPPORTUNITIES!</h4>
+          <h2 class="display-1">Forssa Tech</h2>
+          <h4 class="fs-5">YOUR GATEWAY TO OPPORTUNITIES!</h4>
         </div>
         <div class="fonctions">
-            <a href="#def-forssa"> <button class="fonc">WHAT IS FORSSA ?</button></a>
-            <a href="#it-offers"> <button class="fonc">IT OFFERS</button> <br></a>
-           <a href="#design-offers">  <button class="fonc">DESIGN OFFERS</button></a>
-           <a href="">  <button class="fonc">OFFERS</button></a>
+          <a href="#def-forssa">
+            <button class="fonc">WHAT IS FORSSA ?</button></a
+          >
+          <a href="#it-offers">
+            <button class="fonc">IT OFFERS</button> <br
+          /></a>
+          <a href="#design-offers">
+            <button class="fonc">DESIGN OFFERS</button></a
+          >
+          <a href=""> <button class="fonc">OFFERS</button></a>
         </div>
       </main>
     </div>
     <section class="def-forssa d-flex justify-content-between" id="def-forssa">
-        <div class="def">
-            <h1 class="display-1">Welcome to Forssa</h1> <br>
-            <p>Forssa is a platform designed to connect talented individuals with exciting remote job <br>
-                opportunities in fields like IT, design, marketing, and more. Whether you're a skilled <br>
-                developer, a creative designer, or a professional seeking flexible work, Forssa is here <br>
-                to help you unlock your potential and find your perfect fit. <br> <br>
-                
-                At Forssa, we believe in empowering people to work from anywhere while pursuing the <br>
-                careers they love. With a simple application process and a curated list of high-quality <br>
-                jobs, we make finding your dream role seamless and stress-free. <br>
-                
-                Join Forssa today and start building a brighter, more flexible future for yourself!</p>
+      <div class="def">
+        <h1 class="display-1">Welcome to Forssa</h1>
+        <br />
+        <p>
+          Forssa Tech is a platform designed to connect talented individuals
+          with exciting remote job <br />
+          opportunities in fields like IT, design, marketing, and more. Whether
+          you're a skilled <br />
+          developer, a creative designer, or a professional seeking flexible
+          work, Forssa is here <br />
+          to help you unlock your potential and find your perfect fit. <br />
+          <br />
+
+          At Forssa Tech, we believe in empowering people to work from anywhere
+          while pursuing the <br />
+          careers they love. With a simple application process and a curated
+          list of high-quality <br />
+          jobs, we make finding your dream role seamless and stress-free. <br />
+
+          Join Forssa today and start building a brighter, more flexible future
+          for yourself!
+        </p>
+      </div>
+      <div class="forss-pics">
+        <div class="image-container">
+          <img
+            src="pictures/defintion-pics/company-1.jpg"
+            alt="Image 1"
+            class="active"
+          />
+          <img src="pictures/defintion-pics/company-2.jpg" alt="Image 2" />
+          <img src="pictures/defintion-pics/company-3.jpg" alt="Image 3" />
         </div>
-        <div class="forss-pics">
-            <div class="image-container">
-                <img src="pictures/defintion-pics/company-1.jpg" alt="Image 1" class="active">
-                <img src="pictures/defintion-pics/company-2.jpg" alt="Image 2">
-                <img src="pictures/defintion-pics/company-3.jpg" alt="Image 3">
-              </div>
-        </div>
+      </div>
     </section>
     <div class="jobs-offers">
-        <section class="it-jobs" id="it-jobs">
-            <h1 class="display-1 mb-4 text-center ">IT OFFERS</h1>
-            <div class="d-flex justify-content-evenly">
-                <div class="card bg-transparent text-white" style="width: 18rem;">
-                    <img src="jobs-pics/it-jobs/software.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Data Analyst</h5>
-                      <p class="card-text">Collect, analyze, and interpret large datasets to uncover trends and insights that guide business decisions. Proficiency in tools like SQL and Python is highly valued.</p>
-                      <a href="#"><button class="check-offer">Check offer !</button></a>
-                    </div>
-                  </div>
-                  <div class="card bg-transparent text-white" style="width: 18rem;">
-                    <img src="jobs-pics/it-jobs/data.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Cybersecurity Specialist</h5>
-                      <p class="card-text">Safeguard systems and data by identifying vulnerabilities, implementing security protocols, and responding to cyber threats. A vital role in protecting sensitive information.   </p>
-                      <a href="#"><button class="check-offer">Check offer !</button></a>
-                    </div>
-                  </div>
-                  <div class="card bg-transparent text-white" style="width: 18rem;">
-                    <img src="jobs-pics/it-jobs/sof.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Software Developer</h5>
-                      <p class="card-text">Design, build, and maintain software applications or systems, ensuring they meet user needs. Strong coding, debugging, and problem-solving skills are essential for this role.
-                      </p>
-                      <a href="#"><button class="check-offer">Check offer !</button></a>
-                    </div>
-                  </div>
+      <section class="it-jobs" id="it-offers">
+        <h1 class="display-1 text-center">IT OFFERS</h1>
+        <div class="offers-container">
+          <div class="job-card">
+            <img src="jobs-pics/it-jobs/software.jpg" alt="Data Analyst" />
+            <div class="job-card-body">
+              <h5 class="job-card-title">Data Analyst</h5>
+              <p class="job-card-text">
+                Collect, analyze, and interpret large datasets to uncover trends
+                and insights that guide business decisions. Proficiency in tools
+                like SQL and Python is highly valued.
+              </p>
+              <a href="jobs-pages/dataanalyst/data_analyst.html"><button class="check-offer">VIEW DETAILS</button></a>
             </div>
-            <section class="design-offers" id="design-offers">
-                <h1 class="display-1 mb-4 text-center ">DESIGN OFFERS</h1>
-                <div class="d-flex justify-content-evenly flex-direction-column-lg">
-                    <div class="card bg-transparent text-white" style="width: 18rem;">
-                        <img src="jobs-pics/design-jobs/pexels-tranmautritam-326518.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Graphic Designer</h5>
-                          <p class="card-text">Create visual content for branding, marketing, and advertising using tools like Adobe Photoshop and Illustrator. A strong sense of creativity and attention to detail is essential.</p>
-                          <a href="#"><button class="check-offer">Check offer !</button></a>
-                        </div>
-                      </div>
-                      <div class="card bg-transparent text-white" style="width: 18rem;">
-                        <img src="jobs-pics/design-jobs/pexels-pixabay-414974.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">UI/UX Designer</h5>
-                          <p class="card-text">Design intuitive and visually appealing user interfaces, focusing on user experience. Proficiency in tools like Figma or Sketch and a user-centered mindset are required.</p>
-                          <a href="#"><button class="check-offer">Check offer !</button></a>
-                        </div>
-                      </div>
-                      <div class="card bg-transparent text-white" style="width: 18rem;">
-                        <img src="jobs-pics/design-jobs/pexels-ivan-samkov-4491866.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Product Designer
-                        </h5>
-                          <p class="card-text">Oversee the entire design process for digital or physical products, from concept to final output. Combines UX, branding, and functionality to create exceptional solutions.
-                          </p>
-                          <a href="#"><button class="check-offer">Check offer !</button></a>
-                        </div>
-                      </div>
-                </div>
-            </section>
-           
-            
-        </section>
+          </div>
+
+          <div class="job-card">
+            <img
+              src="jobs-pics/it-jobs/data.jpg"
+              alt="Cybersecurity Specialist"
+            />
+            <div class="job-card-body">
+              <h5 class="job-card-title">Cybersecurity Specialist</h5>
+              <p class="job-card-text">
+                Safeguard systems and data by identifying vulnerabilities,
+                implementing security protocols, and responding to cyber
+                threats. A vital role in protecting sensitive information.
+              </p>
+              <a href="jobs-pages/cyber/cybersecurity.html"><button class="check-offer">VIEW DETAILS</button></a>
+            </div>
+          </div>
+
+          <!-- Software Developer -->
+          <div class="job-card">
+            <img src="jobs-pics/it-jobs/sof.jpg" alt="Software Developer" />
+            <div class="job-card-body">
+              <h5 class="job-card-title">Software Developer</h5>
+              <p class="job-card-text">
+                Design, build, and maintain software applications or systems,
+                ensuring they meet user needs. Strong coding, debugging, and
+                problem-solving skills are essential for this role.
+              </p>
+              <a href="jobs-pages/software/software.html"><button class="check-offer">VIEW DETAILS</button></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="design-offers" id="design-offers">
+        <h1 class="display-1 text-center">DESIGN OFFERS</h1>
+        <div class="offers-container">
+          <div class="job-card">
+            <img
+              src="jobs-pics/design-jobs/pexels-tranmautritam-326518.jpg"
+              alt="Graphic Designer"
+            />
+            <div class="job-card-body">
+              <h5 class="job-card-title">Graphic Designer</h5>
+              <p class="job-card-text">
+                Create visual content for branding, marketing, and advertising
+                using tools like Adobe Photoshop and Illustrator. A strong sense
+                of creativity and attention to detail is essential.
+              </p>
+              <a href="jobs-pages/graphic/graphichome.html"><button class="check-offer">VIEW DETAILS</button></a>
+            </div>
+          </div>
+
+          <div class="job-card">
+            <img
+              src="jobs-pics/design-jobs/pexels-pixabay-414974.jpg"
+              alt="UI/UX Designer"
+            />
+            <div class="job-card-body">
+              <h5 class="job-card-title">UI/UX Designer</h5>
+              <p class="job-card-text">
+                Design intuitive and visually appealing user interfaces,
+                focusing on user experience. Proficiency in tools like Figma or
+                Sketch and a user-centered mindset are required.
+              </p>
+              <a href="jobs-pages/uiux/uiux.html"><button class="check-offer">VIEW DETAILS</button></a>
+            </div>
+          </div>
+
+          <!-- Product Designer -->
+          <div class="job-card">
+            <img
+              src="jobs-pics/design-jobs/pexels-ivan-samkov-4491866.jpg"
+              alt="Product Designer"
+            />
+            <div class="job-card-body">
+              <h5 class="job-card-title">Product Designer</h5>
+              <p class="job-card-text">
+                Oversee the entire design process for digital or physical
+                products, from concept to final output. Combines UX, branding,
+                and functionality to create exceptional solutions.
+              </p>
+              <a href="jobs-pages/productdesign/product.html"><button class="check-offer">VIEW DETAILS</button></a>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-    
+
     <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
